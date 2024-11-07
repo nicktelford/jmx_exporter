@@ -53,8 +53,8 @@ public class SSLWithPKCS12KeyStoreMultipleCertificatesTest extends AbstractTest
 
         public PKCS12KeyStoreTestArgumentFilter() {
             filteredDockerImages = new HashSet<>();
-            filteredDockerImages.add("eclipse-temurin:8-alpine");
-            filteredDockerImages.add("ghcr.io/graalvm/jdk:java8");
+            filteredDockerImages.add("eclipse-temurin:17-alpine");
+            filteredDockerImages.add("ghcr.io/graalvm/jdk:java17");
             filteredDockerImages.add("ibmjava:8");
             filteredDockerImages.add("ibmjava:8-jre");
             filteredDockerImages.add("ibmjava:8-sdk");

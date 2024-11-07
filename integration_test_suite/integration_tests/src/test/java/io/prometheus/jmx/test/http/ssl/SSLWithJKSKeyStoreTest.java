@@ -54,7 +54,7 @@ public class SSLWithJKSKeyStoreTest extends AbstractTest implements Consumer<Htt
                         testArgument ->
                                 !testArgument
                                         .dockerImageName()
-                                        .contains("eclipse-temurin:8-alpine"));
+                                        .contains("eclipse-temurin:17-alpine"));
     }
 
     @TestEngine.Prepare

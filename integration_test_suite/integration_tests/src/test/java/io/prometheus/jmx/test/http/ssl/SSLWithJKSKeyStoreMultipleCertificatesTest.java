@@ -55,7 +55,7 @@ public class SSLWithJKSKeyStoreMultipleCertificatesTest extends AbstractTest
                         testArgument ->
                                 !testArgument
                                         .dockerImageName()
-                                        .contains("eclipse-temurin:8-alpine"));
+                                        .contains("eclipse-temurin:17-alpine"));
     }
 
     @TestEngine.Prepare
