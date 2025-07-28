@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.prometheus.jmx</groupId>
     <artifactId>jmx_exporter</artifactId>
-    <version>1.3.0</version>
+    <version>1.3.0-jdk17</version>
     <name>Prometheus JMX Exporter</name>
     <description>See https://github.com/prometheus/jmx_exporter/blob/main/README.md</description>
     <url>https://github.com/prometheus/jmx_exporter</url>
@@ -202,7 +202,7 @@
                     <encoding>UTF-8</encoding>
                     <docencoding>UTF-8</docencoding>
                     <linksource>true</linksource>
-                    <source>8</source>
+                    <source>17</source>
                 </configuration>
                 <executions>
                     <execution>
@@ -218,8 +218,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>

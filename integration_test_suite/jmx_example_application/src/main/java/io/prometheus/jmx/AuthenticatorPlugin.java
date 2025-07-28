@@ -78,7 +78,7 @@ public class AuthenticatorPlugin extends Authenticator {
     /**
      * Class to implement Principal
      *
-     * <p>Required for ibmjava:8 since it doesn't provide com.sun.security.auth.UserPrincipal
+     * <p>Required for ibmjava:17 since it doesn't provide com.sun.security.auth.UserPrincipal
      */
     public static class UserPrincipal implements Principal, Serializable {
 

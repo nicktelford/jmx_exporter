@@ -30,10 +30,10 @@ public class PBKDF2WithHmacExporterTestEnvironmentFilter
     public PBKDF2WithHmacExporterTestEnvironmentFilter() {
         // Filter out Docker image names that don't support PBKDF2 with HMAC
         filteredDockerImages = new HashSet<>();
-        filteredDockerImages.add("ibmjava:8");
-        filteredDockerImages.add("ibmjava:8-jre");
-        filteredDockerImages.add("ibmjava:8-sdk");
-        filteredDockerImages.add("ibmjava:8-sfj");
+        filteredDockerImages.add("ibmjava:17");
+        filteredDockerImages.add("ibmjava:17-jre");
+        filteredDockerImages.add("ibmjava:17-sdk");
+        filteredDockerImages.add("ibmjava:17-sfj");
     }
 
     /**

@@ -59,7 +59,7 @@ public class CompleteHttpServerConfigurationTest {
 
     @Verifyica.ArgumentSupplier(parallelism = Integer.MAX_VALUE)
     public static Stream<ExporterTestEnvironment> arguments() {
-        // Filter eclipse-temurin:8 based Alpine images due to missing TLS cipher suites
+        // Filter eclipse-temurin:17 based Alpine images due to missing TLS cipher suites
         // https://github.com/adoptium/temurin-build/issues/3002
         // https://bugs.openjdk.org/browse/JDK-8306037
         return ExporterTestEnvironment.createExporterTestEnvironments()
@@ -67,7 +67,7 @@ public class CompleteHttpServerConfigurationTest {
                         exporterTestEnvironment ->
                                 !exporterTestEnvironment
                                         .getJavaDockerImage()
-                                        .contains("eclipse-temurin:8-alpine"))
+                                        .contains("eclipse-temurin:17-alpine"))
                 .map(exporterTestEnvironment -> exporterTestEnvironment.setBaseUrl(BASE_URL));
     }
 

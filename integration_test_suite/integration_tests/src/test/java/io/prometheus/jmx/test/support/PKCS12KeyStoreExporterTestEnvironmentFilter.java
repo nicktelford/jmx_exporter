@@ -29,13 +29,12 @@ public class PKCS12KeyStoreExporterTestEnvironmentFilter
     /** Constructor */
     public PKCS12KeyStoreExporterTestEnvironmentFilter() {
         filteredDockerImages = new HashSet<>();
-        filteredDockerImages.add("eclipse-temurin:8-alpine");
+        filteredDockerImages.add("eclipse-temurin:17-alpine");
         filteredDockerImages.add("ghcr.io/graalvm/jdk:java8");
-        filteredDockerImages.add("ibmjava:8");
-        filteredDockerImages.add("ibmjava:8-jre");
-        filteredDockerImages.add("ibmjava:8-sdk");
-        filteredDockerImages.add("ibmjava:8-sfj");
-        filteredDockerImages.add("ibmjava:11");
+        filteredDockerImages.add("ibmjava:17");
+        filteredDockerImages.add("ibmjava:17-jre");
+        filteredDockerImages.add("ibmjava:17-sdk");
+        filteredDockerImages.add("ibmjava:17-sfj");
     }
 
     /**
